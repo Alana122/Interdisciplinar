@@ -44,5 +44,26 @@ int main()
     }
    
     printf("\n");
+
+    do
+    {
+        printf("\nEscolha uma linha (0 até 4) e uma coluna (0 ou 1):\n");
+        printf("Linha:");
+        scanf("%d", &i); 
+        printf("Coluna:");
+        scanf("%d", &j); 
+    
+        
+        if (i >= 0 && i < 5 && (j == 0 || j == 1)) 
+        {
+            printf("Palavra escolhida: %s\n", mat[i][j]);
+        } 
+        else 
+        {
+            printf("Índices inválidos!\n");
+        }
+ } 
+ while (i < 0 || i >= 5 || (j != 0 && j != 1));
+
     return 0;
 }
