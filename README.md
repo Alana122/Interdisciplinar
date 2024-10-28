@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
-int main() {
+int main() 
+{
     char mat[5][2][20];
     int i = 0;
     int j = 0;
@@ -21,18 +22,23 @@ int main() {
     printf("Matriz (ordem inicial):\n");
    
     i = 0;
-while (i < 5) {
-    j = 0;
-    while (j < 2) {
-        printf("%-15s", mat[i][j]);
-        j++;
+    while (i < 5) 
+    {
+        j = 0;
+        while (j < 2) 
+        {
+            printf("%-15s", mat[i][j]);
+            j++;
+        }
+        printf("\n");
+        i++;
     }
-    printf("\n");
-    i++;
-}
-printf("\nConteudo do vetor:\n");
-    for (i = 0; i < 5; i++) {
-        for (j = 0; j < 2; j++) {
+    
+    printf("\nConteudo do vetor:\n");
+    for (i = 0; i < 5; i++) 
+    {
+        for (j = 0; j < 2; j++) 
+        {
             printf("%-15s", mat[i][j]);
         }
     }
